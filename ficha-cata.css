@@ -10,7 +10,7 @@ html{
 /*=== Base === */
 
 body{
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Courier New', Courier, monospace;
     color: #463325;
     background-color: #f0dac3;
     line-height: 1.6;
@@ -31,7 +31,12 @@ body{
 
 
 }
-
+/* ==== Main === */
+main{
+    max-width: 1200px;
+    margin: 0% auto;
+    padding: 0 20 px;
+}
 #contenedor {
    
     background-image: linear-gradient(
