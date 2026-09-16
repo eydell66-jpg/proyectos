@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+/*=== Base === */
+
+body{
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #463325;
+    background-color: #f0dac3;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==== Cabecera ==== */
+
+.cabecera {
+    background-color: #463325;
+    color: #faf6f1;
+    text-align: center;
+    font-size: 2,5rem;
+    padding: 3rem 1rem;
+}
+.cabecera a {
+    color: #e8c39e;
+
+
+}
+
+#contenedor {
+   
+    background-image: linear-gradient(
+        0deg,
+        rgb(0, 0, 0, 0.5),
+        rgb(0, 0, 0, 0.5)
+    )
+    , url(media/cafetal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #faf6f1;
+    padding: 40px;
+    ;
+
+}
+
+.lista-cafes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding:0%;
+    margin: 0;
+
+}
+.lista-cafes p{
+    font-size: 15px;
+}
+.cafe {
+     list-style-type: none;
+     padding: 0%;
+     margin: 0;
+}
+footer {
+    text-align: center;
+    padding: 1,5rem;
+}
