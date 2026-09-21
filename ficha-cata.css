@@ -85,7 +85,7 @@ main{
     font-size: 15px;
 }
 .cafe {
-    background-color: var(--claro);
+    background-color: var(--crema);
     color: var(--marron) ;
     padding: 1.25rem;
     border-radius: 8px;
