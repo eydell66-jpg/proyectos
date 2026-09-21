@@ -1,15 +1,23 @@
 
 const selectCafe = document.getElementById('cafe');
 const inputCantidad = document.getElementById('cantidad');
-const inputTotal = document.getElementById('total');
+const inputResultado = document.getElementById('resultado')
+const botonCalcular = document.getElementById('botoncalcular');
 
-// funcion que realiza la operación matemática //
+// Escuchar el clic del boton //
+botonCalcular.addEventListener('click', function() {
+
+// conversion de value a un numero //    
 const precio = parseFloat(selectCafe.value) || 0;
+
 const cantidad = parseInt(inputCantidad.value) || 0;
 
 // operacion con dos decimales
 const totalPago = precio * cantidad;
 
-// Escuchar cambios en los elementos para calculo en tiempo real //
-selectCafe.addEventListener('change', calcularTotal);
-inputCantidad.addEventListener('input', calcularTotal);
+// Mostramos el resultado en la casilla resultado //
+inputResultado.value = totalPago.toFixed(2);
+
+});
+
+
