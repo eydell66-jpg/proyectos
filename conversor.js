@@ -11,6 +11,7 @@ botonCalcular.addEventListener('click', function() {
 const precio = parseFloat(selectCafe.value) || 0;
 const cantidad = parseInt(inputCantidad.value) || 0;
 
+// condicional para filtrar que no sea 0 //
 if (cantidad === 0){
     
     inputResultado.value = "Introduce una cantidad valida";
@@ -22,9 +23,6 @@ if (cantidad === 0){
 
 
 }
-
-
-
 
 });
 
