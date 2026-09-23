@@ -1,9 +1,44 @@
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
+
+h1 {
+    font-size: 4rem;
+    color: #f0dac3;
+    text-align: center;
+    
+}
+p {
+    font-size: 1.5m;
+    color: #f0dac3;
+    text-align: center;
+    margin-top: 1rem;
+}
 :root {
    --marron: #463325;
     --crema: #f0dac3;
     --claro:#faf6f1;
     --acento:#c8763a;
+}
+.cabecera {
+    background-color: var(--marron);
+
+}
+#calculadora h2{
+      font-size: 2rem;
+      color: var(--marron);
+      text-align: center;
+      margin-top: 1rem;
+
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 }
