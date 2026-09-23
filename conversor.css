@@ -6,7 +6,9 @@
     box-sizing: border-box;
 
 }
-
+body {
+    font-family: Georgia, serif;
+}
 h1 {
     font-size: 4rem;
     color: #f0dac3;
@@ -33,11 +35,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 90vh;
+    background-color: var(--crema);
 }
 #calculadora h2 {
     transform: translateY(-1rem);
     color: var(--marron);
     text-align: center;
 }
-    
+.calcularcafe {
+    font-size: 2rem;
+    color: var(--marron);
+
+}
+
