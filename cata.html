@@ -10,19 +10,6 @@
 
 
 <body>
-    <?php if (!empty($errores)): ?>
-         <h1>No Hemos podido completar la reserva</h1>
-         <ul>
-            <?php foreach ($errores as $error): ?>
-                <li><?= htmlspecialchars($error) ?></li>
-            <?php endforeach; ?>
-          </ul>
-          <p><a href="cata.html">Volver al formulario</a></p>
-    <?php else: ?>
-          <h1>!Hecho, <?= htmlspecialchars($nombre) ?>!</h1>
-          <p>Te hemos reservado <?= htmlspecialchars($plazasValidas) ?> plazas para la próxima cata.</p>
-    <?php endif; ?>
-
     <header class="cabecera" >
          <h1>Tueste Norte</h1>
     </header>
@@ -31,7 +18,7 @@
     <section id="formulario">
 
         <h2>Reserva de Catas</h2>
-         <form action="nombre" method="POST">
+         <form action="cata.php" method="POST">
 
             <div>
                 <label for="nombre">Nombre completo</label>
@@ -46,6 +33,7 @@
             </div>
            
             <button type="submit">Reservar</button>
+
         </form>    
     </section>
 </main>
